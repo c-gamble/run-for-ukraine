@@ -6,7 +6,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#047cc4",endColorstr="#fbf404",GradientType=1);
 
 }
-#main {
+#welcome {
  height: 100vh;
  display: flex;
  flex-direction: column;
