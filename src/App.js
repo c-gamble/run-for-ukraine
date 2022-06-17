@@ -73,7 +73,19 @@ function App() {
     <body>
         <div id = "welcome">
           <div id = "welcome-top">
+            <div id = "t1">
 
+            </div>
+
+            <div id = "t2">
+
+            </div>
+
+            <div id = "t3">
+              <div class = "corner" id = "w-sponsor">
+                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
+              </div>
+            </div>
           </div>
 
           <div id = "welcome-mid">
@@ -86,15 +98,25 @@ function App() {
           </div>
 
           <div id = "bottom">
-            <div class = "footer" id = "w-sponsor">
-              <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-            </div>
+
           </div>
         </div>
 
         <div id = "menu">
           <div id = "menu-top">
-            
+            <div id = "t1">
+
+            </div>
+
+            <div id = "t2">
+
+            </div>
+
+            <div id = "t3">
+              <div class = "corner" id = "m-sponsor">
+                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
+              </div>
+            </div>
           </div>
 
           <div id = "menu-mid">
@@ -113,52 +135,102 @@ function App() {
           </div>
 
           <div id = "bottom">
-            <div class = "footer" id = "m-sponsor">
-              <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-            </div>
+
           </div>
 
         </div>
 
         <div id = "home">
+
           <div id = "home-top">
+            <div id = "t1">
+
+            </div>
+
+            <div id = "t2">
+              <div id = "content-container">
+                <div id = "content">
+                  <button id = "btn" onClick = {homeMenu}>Run for Ukraine</button>
+                  <div id = "title">Home</div>
+                </div>
+              </div>
+            </div>
+
+            <div id = "t3">
+              <div class = "corner" id = "h-sponsor">
+                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
+              </div>
+            </div>
+
 
           </div>
 
           <div id = "home-mid">
-            this is home
-            <button id = "return" onClick = {homeMenu}>back to menu</button>
+
           </div>
 
           <div id = "home-bottom">
-            <div class = "footer" id = "h-sponsor">
-                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-            </div>
+
           </div>
 
         </div>
 
         <div id = "info">
+
           <div id = "info-top">
-            info
+            <div id = "t1">
+
+            </div>
+
+            <div id = "t2">
+              <div id = "content-container">
+                <div id = "content">
+                  <button id = "btn" onClick = {infoMenu}>Run for Ukraine</button>
+                  <div id = "title">Info</div>
+                </div>
+              </div>
+            </div>
+
+            <div id = "t3">
+              <div class = "corner" id = "i-sponsor">
+                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
+              </div>
+            </div>
           </div>
 
           <div id = "info-mid">
-            <button id = "return" onClick = {infoMenu}>back to menu</button>
+
           </div>
 
           <div id = "info-bottom">
-            <div class = "footer" id = "i-sponsor">
-                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-            </div>
+
           </div>
 
         </div>
 
         <div id = "donate">
+
           <div id = "donate-top">
-            donate
-            <button id = "return" onClick = {donateMenu}>back to menu</button>
+            <div id = "t1">
+
+            </div>
+
+            <div id = "t2">
+              <div id = "content-container">
+                <div id = "content">
+                  <button id = "btn" onClick = {donateMenu}>Run for Ukraine</button>
+                  <div id = "title">Donate</div>
+                </div>
+              </div>
+            </div>
+
+            <div id = "t3">
+              <div class = "corner" id = "d-sponsor">
+                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
+              </div>
+            </div>
+
+
           </div>
 
           <div id = "donate-mid">
@@ -178,9 +250,7 @@ function App() {
 
 
           <div id = "donate-bottom">
-            <div class = "footer" id = "d-sponsor">
-                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-            </div>
+
           </div>
         </div>
     </body>
