@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { BiHomeAlt } from "react-icons/bi";
 import { MdAppRegistration } from 'react-icons/md';
-import { AiOutlineInfoCircle, AiOutlineGoogle } from 'react-icons/ai';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 import {TbReportMoney} from 'react-icons/tb';
 import { CgPaypal } from 'react-icons/cg';
 import { IoLogoVenmo } from 'react-icons/io5';
@@ -199,11 +199,59 @@ function App() {
           </div>
 
           <div id = "info-mid">
+            <div id = "div-title">
+              About the Cause
+            </div>
+            <div id = "mts">
+              <div id = "mt1">
+                <dl id = "list">
+                  <dt id = "item">What is happening in Ukraine?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
+              
+              <div id = "mt2">
+                <dl id = "list">
+                  <dt id = "item">What are the global consequences?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
 
+              <div id = "mt3">
+                <dl id = "list">
+                  <dt id = "item">How can we support Ukraine?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
+            </div>
           </div>
 
           <div id = "info-bottom">
+            <div id = "div-title">
+              About the Event
+            </div>
+            <div id = "bts">
+              <div id = "bt1">
+                <dl id = "list">
+                  <dt id = "item">When and where is Run for Ukraine?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
+              
+              <div id = "bt2">
+                <dl id = "list">
+                  <dt id = "item">What is the procedure to register?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
 
+              <div id = "bt3">
+                <dl id = "list">
+                  <dt id = "item">What can I expect at the event?</dt>
+                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
+                </dl>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -242,10 +290,14 @@ function App() {
                   <dd id = "subicon"><CgPaypal size = {30}/></dd>
                   <dt id = "option"><button id = "btn" onClick = {null}>CashApp</button></dt>
                   <dd id = "subicon"><SiCashapp size = {30}/></dd>
-                  <dt id = "option"><button id = "btn" onClick = {null}>GPay</button></dt>
-                  <dd id = "subicon"><AiOutlineGoogle size = {30}/></dd>
                 </dl>
               </div>
+            <div id = "donate-mid-bottom">
+              <div id = "thank-container">
+                <h4 id = "thank">We sincerely appreciate your contribution. All proceeds will be donated to the International Committee of the Red Cross to aid humanitarian efforts in Ukraine.</h4>
+              </div>
+            </div>
+
           </div>
 
 

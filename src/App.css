@@ -96,7 +96,7 @@ body {
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
 }
-#navbar > dt, dd {
+#navbar > dt, #navbar > dd {
   display: flex;
   justify-content: center;
   margin-left: 20px;
@@ -188,10 +188,53 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#047cc4",endColorstr="#fbf404",GradientType=1);
 }
 #info > div {
-  height: 33.3vh;
   display: flex;
 }
+#info-top {
+  height: 15vh;
+}
+#info-mid, #info-bottom {
+  height: 42.5vh;
+  flex-direction: column;
+  justify-content: center;
+}
+#div-title {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
 
+}
+#mts, #bts {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+}
+#mts > div, #bts > div {
+  width: 33.3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#list {
+  text-align: center;
+}
+#item {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#desc {
+  margin-inline-start: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #donate {
   display: flex;
   flex-direction: column;
@@ -209,7 +252,6 @@ body {
   display: flex;
 }
 #donate-mid {
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -223,13 +265,27 @@ body {
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
 }
-#options > dt, dd {
-  display: flex;
-  justify-content: center;
+#options > dt, #options > dd {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+#option, #subicon {
+  text-align: center;
+}
+#donate-mid-bottom {
+  display: flex;
+  justify-content: center;
+}
+#thank-container {
+  text-align: center;
+  width: 50vw;
+}
+#thank {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
 /*
 display: flex;
 flex-direction: column;
