@@ -217,7 +217,7 @@ function App() {
                 <dt id = "q">What is the registration procedure for the run?</dt>
                 <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
 
-                <dt id = "q">What can I expect on the day of the event?</dt>
+                <dt id = "q">What can you expect on the day of the event?</dt>
                 <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
               </dl>
             </div>
