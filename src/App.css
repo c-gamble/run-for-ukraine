@@ -193,47 +193,36 @@ body {
 #info-top {
   height: 15vh;
 }
-#info-mid, #info-bottom {
-  height: 42.5vh;
-  flex-direction: column;
-  justify-content: center;
-}
-#div-title {
-  display: flex;
-  justify-content: center;
-  height: 10%;
-  margin: 0;
-  font-size: 22px;
-  font-weight: bold;
-
-}
-#mts, #bts {
-  display: flex;
-  justify-content: center;
-  height: 90%;
-}
-#mts > div, #bts > div {
-  width: 33.3vw;
-  display: flex;
+#info-content {
+  height: 85vh;
   flex-direction: row;
   justify-content: center;
 }
-#list {
+#padder {
+  width: 15vw;
+}
+#info-main {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#qa {
   text-align: center;
 }
-#item {
-  font-style: italic;
-  text-decoration: underline;
-  font-weight: normal;
+#q-1 {
+  margin-bottom: 10px;
+  font-weight: bold;
   font-size: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
-#desc {
+#q {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#a {
   margin-inline-start: 0px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 #donate {
   display: flex;

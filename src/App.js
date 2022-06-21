@@ -198,62 +198,31 @@ function App() {
             </div>
           </div>
 
-          <div id = "info-mid">
-            <div id = "div-title">
-              About the Cause
-            </div>
-            <div id = "mts">
-              <div id = "mt1">
-                <dl id = "list">
-                  <dt id = "item">What is happening in Ukraine?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
-              
-              <div id = "mt2">
-                <dl id = "list">
-                  <dt id = "item">What are the global consequences?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
+          <div id = "info-content">
+            <div id = "padder"></div>
+            <div id = "info-main">
+              <dl id = "qa">
+                <dt id = "q-1">What is happening in Ukraine?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
 
-              <div id = "mt3">
-                <dl id = "list">
-                  <dt id = "item">How can we support Ukraine?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
+                <dt id = "q">What are the situation's global consequences?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+
+                <dt id = "q">How can you support the people of Ukraine?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+
+                <dt id = "q">When and where is the Run for Ukraine?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+
+                <dt id = "q">What is the registration procedure for the run?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+
+                <dt id = "q">What can I expect on the day of the event?</dt>
+                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+              </dl>
             </div>
+            <div id = "padder"></div>
           </div>
-
-          <div id = "info-bottom">
-            <div id = "div-title">
-              About the Event
-            </div>
-            <div id = "bts">
-              <div id = "bt1">
-                <dl id = "list">
-                  <dt id = "item">When and where is Run for Ukraine?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
-              
-              <div id = "bt2">
-                <dl id = "list">
-                  <dt id = "item">What is the procedure to register?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
-
-              <div id = "bt3">
-                <dl id = "list">
-                  <dt id = "item">What can I expect at the event?</dt>
-                  <dd id = "desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis malesuada ex ut ultricies. Ut ac faucibus erat. Duis mattis nulla quis dolor efficitur pharetra. Suspendisse suscipit dapibus magna non fermentum. Sed scelerisque ex vel ex rhoncus mollis. Aenean semper nunc gravida est sodales condimentum. Sed hendrerit, velit ut commodo fermentum, lacus arcu placerat diam, id volutpat leo turpis at dolor.</dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-
         </div>
 
         <div id = "donate">
