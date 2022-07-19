@@ -1,0 +1,118 @@
+* {
+    font-family: 'Andale Mono', monospace;
+}
+#event-cont {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 210px;
+    text-align: center;
+}
+#main-cont > h2 {
+    margin-left: 10px;
+}
+#event-qs {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+}
+
+#dropdown {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#select-controller {
+    width: 242px;
+    padding: 7px 10px;
+    cursor: pointer;
+    padding-right: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: transparent;
+    pointer-events: none;
+    height: 2vh;
+}
+#select-controller::placeholder {
+    color: #000;
+    font-weight: bold;    
+}
+#select-cover {
+    z-index: 100;
+    position: relative;
+    top: -3vh;
+    cursor: pointer;
+    height: 2vh;
+    width: 256px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+#active-cover {
+    z-index: 100;
+    cursor: pointer;
+    position: relative;
+    top: -2.5vh;
+    height: 2vh;
+    width: 256px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+#arrow {
+    height: 1vh;
+    width: 1vh;
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
+}
+#active-arrow {
+    height: 1vh;
+    width: 1vh;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(-45deg);
+}
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 268px;
+    background: transparent;
+}
+#options > div {
+    padding: 7px 10px;
+    width: 242px;
+    transition: all 350ms;
+    background: transparent;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#options > div:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+}
+#qa {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #q {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #a {
+    margin-inline-start: 0px;
+  }

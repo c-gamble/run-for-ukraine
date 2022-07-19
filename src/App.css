@@ -1,5 +1,6 @@
 body {
   font-family: 'Andale Mono', monospace;
+  min-height: 100vh;
 }
 #welcome {
   display: flex;
@@ -111,7 +112,7 @@ body {
 #home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   width: 100vw;
   background: rgb(4,124,196);
@@ -133,10 +134,10 @@ body {
   height: 33.3vw;
 }
 #home > div {
-  height: 33.3vh;
   display: flex;
 }
 #home-top {
+  height:  20vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -168,14 +169,41 @@ body {
   font-style: italic;
 }
 #home-mid {
+  height: 281px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+}
+#home-imgs, #home-imgs > div, .react-slideshow-container, .react-slideshow-fadezoom-wrapper, .react-slideshow-fadezoom-images-wrap, .react-slideshow-fadezoom-images-wrap > div {
+  height: 281px;
+  width: 500px;
+  border-radius: 10px;
+}
+#slide {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#caption {
+  z-index: 100;
+  width: 475px;
+  position: absolute;
+  bottom: 5%;
+  left: 2.5%;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 0px;
+  border-radius: 10px;
+  border-color: transparent;
 }
 #t3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+#home-bottom {
+  height: auto;
 }
 #info {
   display: flex;
@@ -200,32 +228,15 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-#padder {
-  width: 15vw;
-}
 #info-main {
-  width: 70vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-#qa {
-  text-align: center;
-}
-#q-1 {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-#q {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-#a {
-  margin-inline-start: 0px;
-}
+
+
+
 #donate {
   display: flex;
   flex-direction: column;
@@ -250,13 +261,13 @@ body {
   display: flex;
   justify-content: center;
 }
-#options {
+#donate-options {
   display: grid;
   grid-template-rows: auto auto;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
 }
-#options > dt, #options > dd {
+#donate-options > dt, #donate-options > dd {
   margin-left: 20px;
   margin-right: 20px;
 }

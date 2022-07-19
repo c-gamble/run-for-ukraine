@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
+
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+//icons
 import { BiHomeAlt } from "react-icons/bi";
 import { MdAppRegistration } from 'react-icons/md';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
@@ -7,7 +11,37 @@ import {TbReportMoney} from 'react-icons/tb';
 import { CgPaypal } from 'react-icons/cg';
 import { IoLogoVenmo } from 'react-icons/io5';
 import { SiCashapp } from 'react-icons/si';
+
+//components
+import UkraineSelector from './selectors/ukraine.selector';
+import EventSelector from './selectors/event.selector';
+
+
 function App() {
+
+  const slideImages = [
+    {
+      url: require('./images/1.png'),
+      caption: 'Ukrainian soldiers carry the coffins of the fallen during the funeral in Lviv, Ukraine on May 26.',
+    },
+    {
+      url: require('./images/2.png'),
+      caption: "Russia's stated aim is to capture and control Ukraine's eastern region of Donbas.",
+    },
+    {
+      url: require('./images/3.png'),
+      caption: 'Participants train with wooden replicas of weapons during a defense course for civilians.',
+    },
+    {
+      url: require('./images/4.png'),
+      caption: "The Remembrance Wall at St. Michael's Cathedral memorializes 14,000+ soldiers killed in Ukraine.",
+    },
+    {
+      url: require('./images/5.png'),
+      caption: 'Rescuers work at a residential building damaged during Ukraine-Russia conflict in Mariupol.',
+    }
+]
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
   });
@@ -71,6 +105,8 @@ function App() {
 
   return (
     <body>
+
+        {/*welcome */}
         <div id = "welcome">
           <div id = "welcome-top">
             <div id = "t1">
@@ -82,7 +118,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div class = "corner" id = "w-sponsor">
+              <div className = "corner" id = "w-sponsor">
                 <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
               </div>
             </div>
@@ -102,6 +138,7 @@ function App() {
           </div>
         </div>
 
+        {/*menu */}
         <div id = "menu">
           <div id = "menu-top">
             <div id = "t1">
@@ -113,7 +150,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div class = "corner" id = "m-sponsor">
+              <div className = "corner" id = "m-sponsor">
                 <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
               </div>
             </div>
@@ -140,6 +177,7 @@ function App() {
 
         </div>
 
+      {/*home */}
         <div id = "home">
 
           <div id = "home-top">
@@ -157,7 +195,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div class = "corner" id = "h-sponsor">
+              <div className = "corner" id = "h-sponsor">
                   <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
               </div>
             </div>
@@ -166,7 +204,30 @@ function App() {
           </div>
 
           <div id = "home-mid">
-
+            <div id = 'home-imgs'>
+              <Fade>
+                <div id = 'slide'>
+                  <img alt = {slideImages[0].caption} src = {slideImages[0].url} />
+                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[0].caption}</span>
+                </div>
+                <div id = 'slide'>
+                  <img alt = {slideImages[1].caption} src = {slideImages[1].url} />
+                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[1].caption}</span>
+                </div>
+                <div id = 'slide'>
+                  <img alt = {slideImages[2].caption} src = {slideImages[2].url} />
+                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[2].caption}</span>
+                </div>
+                <div id = 'slide'>
+                  <img alt = {slideImages[3].caption} src = {slideImages[3].url} />
+                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[3].caption}</span>
+                </div>
+                <div id = 'slide'>
+                  <img alt = {slideImages[4].caption} src = {slideImages[4].url} />
+                  <span id = 'caption' style = {{'color': 'rgb(255,255,255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[4].caption}</span>
+                </div>
+              </Fade>
+            </div>
           </div>
 
           <div id = "home-bottom">
@@ -175,6 +236,7 @@ function App() {
 
         </div>
 
+      {/*info */}
         <div id = "info">
 
           <div id = "info-top">
@@ -192,39 +254,21 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div class = "corner" id = "i-sponsor">
+              <div className = "corner" id = "i-sponsor">
                   <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
               </div>
             </div>
           </div>
 
           <div id = "info-content">
-            <div id = "padder"></div>
             <div id = "info-main">
-              <dl id = "qa">
-                <dt id = "q-1">What is happening in Ukraine?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-
-                <dt id = "q">What are the situation's global consequences?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-
-                <dt id = "q">How can you support the people of Ukraine?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-
-                <dt id = "q">When and where is the Run for Ukraine?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-
-                <dt id = "q">What is the registration procedure for the run?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-
-                <dt id = "q">What can you expect on the day of the event?</dt>
-                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
-              </dl>
+                <UkraineSelector />
+                <EventSelector />
             </div>
-            <div id = "padder"></div>
           </div>
         </div>
 
+      {/*donate */}
         <div id = "donate">
 
           <div id = "donate-top">
@@ -242,7 +286,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div class = "corner" id = "d-sponsor">
+              <div className = "corner" id = "d-sponsor">
                   <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
               </div>
             </div>
@@ -252,7 +296,7 @@ function App() {
 
           <div id = "donate-mid">
             <div id = "options-container">
-              <dl id = "options">
+              <dl id = "donate-options">
                   <dt id = "option"><button id = "btn" onClick = {null}>Venmo</button></dt>
                   <dd id = "subicon"><IoLogoVenmo size = {30}/></dd>
                   <dt id = "option"><button id = "btn" onClick = {null}>PayPal</button></dt>
@@ -263,17 +307,17 @@ function App() {
               </div>
             <div id = "donate-mid-bottom">
               <div id = "thank-container">
-                <h4 id = "thank">We sincerely appreciate your contribution. All proceeds will be donated to the International Committee of the Red Cross to aid humanitarian efforts in Ukraine.</h4>
+                <h4 id = "thank">We sincerely appreciate your contribution. All proceeds will be donated to the <b>International Committee of the Red Cross</b> to aid humanitarian efforts in Ukraine.</h4>
               </div>
             </div>
 
           </div>
 
-
           <div id = "donate-bottom">
 
           </div>
         </div>
+
     </body>
   );
 }
