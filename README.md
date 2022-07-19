@@ -1,4 +1,4 @@
 # WE STAND WITH UKRAINE
-![Ukraine Flag](./ukraine-flag.png)
+![Ukraine Flag](./src/ukraine-flag.png)
 
 
