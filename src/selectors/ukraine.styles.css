@@ -101,7 +101,7 @@
     background: rgba(255, 255, 255, 0.25) !important;
 }
 #qa {
-    width: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,4 +114,5 @@
   }
   #a {
     margin-inline-start: 0px;
+    line-height: 1.5;
   }

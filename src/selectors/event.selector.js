@@ -90,17 +90,17 @@ export default function EventSelector() {
                     (q1) ?
                         (<motion.dl custom = {1} initial = 'hidden' animate = 'visible'variants = {question} id = 'qa'>
                                 <dt id = "q">When and where is the Run for Ukraine?</dt>
-                                <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+                                <dd id = "a">The Run for Ukraine will take place on September 18 from 1:00PM to 3:00PM. The run will follow the trails in and around Soldiers Field. We will convene at Soldiers Field Picnic Shelter (244 Soldiers Field Drive SW), where the race will begin and end. </dd>
                         </motion.dl>) : 
                             (q2) ? 
                                 (<motion.dl custom = {1} initial = 'hidden' animate = 'visible'variants = {question} id = 'qa'>
                                     <dt id = "q">What is the registration procedure for the run?</dt>
-                                    <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+                                    <dd id = "a">The registration and t-shirt order form can be found <a href = "https://form.jotform.com/222060604863147">here</a>. You only need to fill out the form once, regardless of how many people you are regsitering. Registration and shirt payments may be made via credit or debit card if you sign up online. Same-day purchases are limited to cash-only. <b>K-12 students receive a 25% discount, so sign up and bring your friends!</b></dd>
                                 </motion.dl>) : 
                                     (q3) ? 
                                         (<motion.dl custom = {1} initial = 'hidden' animate = 'visible'variants = {question} id = 'qa'>
                                             <dt id = "q">What can I expect on the day of the event?</dt>
-                                            <dd id = "a">Lorem ipsum dolor salat. This is where the answer will go.</dd>
+                                            <dd id = "a">On the day of the event there will be an check-in period during which shirts will be handed out. Next, the run itself will take place, followed by snacks and speakers. There will be various lawn games to play and local organizations’ stands to check out throughout the event.</dd>
                                         </motion.dl>) : 
                                             (null)
                 }

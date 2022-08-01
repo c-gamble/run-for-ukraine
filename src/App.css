@@ -57,7 +57,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   color: black;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 2px solid black;
   transition: all 350ms;
   margin-bottom: 5px;
@@ -65,6 +65,7 @@ body {
 #btn:hover {
   color: rgba(251,244,4,1);
   border: 2px solid rgb(4,124,196);
+  transform: scale(1.03);
 }
 
 
@@ -172,8 +173,38 @@ body {
   height: 281px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
+#home-mid-1, #home-mid-3 {
+  width: calc((80vh)/2);
+  height: 281px;
+}
+#home-event-details, #home-cause-blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#home-event-details > *, #home-cause-blurb > * {
+  padding: 0px;
+  margin: 0px;
+}
+#home-cause-blurb > h4, #home-event-details > h4 {
+  margin-bottom: 1.5vh;
+}
+#home-event-details > ul {
+  list-style-type: "➞";
+  text-align: center !important;
+  list-style-position: inside;
+  line-height: 1.5;
+}
+#home-cause-blurb > p {
+  line-height: 1.5;
+}
+#home-mid-2 {
+  width: 500px;
+}
+
 #home-imgs, #home-imgs > div, .react-slideshow-container, .react-slideshow-fadezoom-wrapper, .react-slideshow-fadezoom-images-wrap, .react-slideshow-fadezoom-images-wrap > div {
   height: 281px;
   width: 500px;
@@ -203,8 +234,35 @@ body {
   justify-content: flex-start;
 }
 #home-bottom {
-  height: auto;
+  height: calc(100vh - 20vh - 281px);
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+}  
+#home-b-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
 }
+#home-btn {
+  background-color: transparent !important;
+  font-family: 'Andale Mono', monospace;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: all 350ms;
+}
+#home-btn:hover {
+  color: rgba(251,244,4,1);
+  border: 2px solid rgb(4,124,196);
+  transform: scale(1.03);
+}
+
 #info {
   display: flex;
   flex-direction: column;

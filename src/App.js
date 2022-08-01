@@ -87,7 +87,7 @@ function App() {
     donate.scrollIntoView({ block: 'end', behavior: 'smooth' })
   }
   const handleRegister = () => {
-    window.open("https://forms.gle/Ma9YZb6VctfaAC8SA")
+    window.open("https://form.jotform.com/222060604863147")
   };
 
   const homeMenu = () => {
@@ -118,9 +118,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div className = "corner" id = "w-sponsor">
-                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-              </div>
+
             </div>
           </div>
 
@@ -150,9 +148,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div className = "corner" id = "m-sponsor">
-                <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-              </div>
+
             </div>
           </div>
 
@@ -195,43 +191,68 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div className = "corner" id = "h-sponsor">
-                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-              </div>
+
             </div>
 
 
           </div>
 
           <div id = "home-mid">
-            <div id = 'home-imgs'>
-              <Fade>
-                <div id = 'slide'>
-                  <img alt = {slideImages[0].caption} src = {slideImages[0].url} />
-                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[0].caption}</span>
+            <div id = "home-mid-1">
+                <div id = "home-event-details">
+                  <h4>Quick Facts</h4> 
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul> 
                 </div>
-                <div id = 'slide'>
-                  <img alt = {slideImages[1].caption} src = {slideImages[1].url} />
-                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[1].caption}</span>
-                </div>
-                <div id = 'slide'>
-                  <img alt = {slideImages[2].caption} src = {slideImages[2].url} />
-                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[2].caption}</span>
-                </div>
-                <div id = 'slide'>
-                  <img alt = {slideImages[3].caption} src = {slideImages[3].url} />
-                  <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[3].caption}</span>
-                </div>
-                <div id = 'slide'>
-                  <img alt = {slideImages[4].caption} src = {slideImages[4].url} />
-                  <span id = 'caption' style = {{'color': 'rgb(255,255,255)', 'background-color':'rgba(0, 0, 0, 0.5)'}}>{slideImages[4].caption}</span>
-                </div>
-              </Fade>
             </div>
+            <div id = "home-mid-2">
+              <div id = 'home-imgs'>
+                <Fade>
+                  <div id = 'slide'>
+                    <img alt = {slideImages[0].caption} src = {slideImages[0].url} />
+                    <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'backgroundColor':'rgba(0, 0, 0, 0.5)'}}>{slideImages[0].caption}</span>
+                  </div>
+                  <div id = 'slide'>
+                    <img alt = {slideImages[1].caption} src = {slideImages[1].url} />
+                    <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'backgroundColor':'rgba(0, 0, 0, 0.5)'}}>{slideImages[1].caption}</span>
+                  </div>
+                  <div id = 'slide'>
+                    <img alt = {slideImages[2].caption} src = {slideImages[2].url} />
+                    <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'backgroundColor':'rgba(0, 0, 0, 0.5)'}}>{slideImages[2].caption}</span>
+                  </div>
+                  <div id = 'slide'>
+                    <img alt = {slideImages[3].caption} src = {slideImages[3].url} />
+                    <span id = 'caption' style = {{'color': 'rgb(255, 255, 255)', 'backgroundColor':'rgba(0, 0, 0, 0.5)'}}>{slideImages[3].caption}</span>
+                  </div>
+                  <div id = 'slide'>
+                    <img alt = {slideImages[4].caption} src = {slideImages[4].url} />
+                    <span id = 'caption' style = {{'color': 'rgb(255,255,255)', 'backgroundColor':'rgba(0, 0, 0, 0.5)'}}>{slideImages[4].caption}</span>
+                  </div>
+                </Fade>
+              </div>
+            </div>
+            <div id = "home-mid-3">
+                <div id = "home-cause-blurb">
+                  <h4>Our Mission</h4>
+                  <p>The organizers' foremost objective is to unite our community in making a meaningful difference globally. The country of Ukraine’s sovereignty and citizens are threatened by the Russian invasion. By joining our cause, you are providing essential aid to people in critical need.</p>
+                </div>
+
+            </div>
+
           </div>
 
           <div id = "home-bottom">
-
+            <div id = "home-b-cont">
+              <button id = "home-btn" onClick = {() => window.open('https://form.jotform.com/222060604863147')}>Register Now</button>
+              <h4>or</h4>
+              <button id = "home-btn" onClick = {() => window.open('')}>Read More</button>
+             </div>
           </div>
 
         </div>
@@ -254,9 +275,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div className = "corner" id = "i-sponsor">
-                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-              </div>
+
             </div>
           </div>
 
@@ -286,9 +305,7 @@ function App() {
             </div>
 
             <div id = "t3">
-              <div className = "corner" id = "d-sponsor">
-                  <a id = "sponsor" href = "https://www.rochinitiative.org" target = "_blank" rel = "noreferrer">Sponsored By <b>RCI</b></a>
-              </div>
+
             </div>
 
 
